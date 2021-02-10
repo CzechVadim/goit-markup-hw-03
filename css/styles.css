@@ -105,9 +105,20 @@ body {
 
 .advantages {
   background-color: var(--bg-white-color);
+  padding-top: 94px; /* внутренний отступ до края элемента */
+  padding-bottom: 94px; /* внутренний отступ до края элемента */
+}
+ /* контейнер для стилизации секции */
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .subtitle {
+  margin-top: 0px; /* отступ от края текста */
+  margin-bottom: 10px; /* отступ до края текста */
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -118,6 +129,8 @@ body {
 }
 
 .list {
+  margin-top: 0px; /* отступ от края текста */
+  margin-bottom: 0px; /* отступ от края текста */
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -128,6 +141,12 @@ body {
 
 
 /* SERVICES */
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .services {
   background-color: var(--bg-white-color);;
