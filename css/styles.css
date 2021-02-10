@@ -1,0 +1,224 @@
+/* OСНОВНОЙ ШРИФТ ДЛЯ ВСЕГО ДОКУМЕНТА И ССІЛОК */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+
+.header {
+  background-color: var(--bg-white-color);
+}
+
+.logotype {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+.web {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--blue-text);
+}
+
+.menu a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--black-text);
+}
+
+.menu a.current {
+  color: var(--blue-text);
+}
+
+.menu a:hover {
+  color: var(--blue-text);
+}
+
+.contacts a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--gray-text);
+}
+
+.contacts a:hover {
+  color: var(--blue-text);
+}
+
+
+/* HERO */
+
+.hero {
+  background-color: var(--bg-blue-color-hero);
+  text-align: center; /* выравнивание текста внутри родителя по центру */
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  margin-top: 0; /* убирает отступы у hero-title что бы не пробивало и не отодвигало соседние блоки */
+  margin-bottom: 40px; /* отступ hero-title от button-primary */
+
+}
+
+.button-primary {
+  display: inline-block; /* делает ссылку блочно-строчным боксом для того чтобы работали отступы от других блоков */
+  background-color: var(--bg-blue-color); /* цвет фона кнопки */
+  border-radius: 4px; /* закругление границ кнопки */
+  padding-left: 32px; /* отступ шрифта от границ кнопки */
+  padding-top: 10px; /* отступ шрифта от границ кнопки */
+  padding-right: 32px; /* отступ шрифта от границ кнопки */
+  padding-bottom: 10px; /* отступ шрифта от границ кнопки */
+  min-width: 200px; /* минимальная ширина кнопки */
+  font-style: normal; /* начертание шрифта */
+  font-weight: bold; /* насыщеность шрифта */
+  font-size: 16px; /* размер шрифта */
+  color: var(--white-text); /* цвет шрифта */
+  text-align: center; /* выравнивание текста по центру */
+  line-height: 30px; /* междустрочное расстояние */
+  letter-spacing: 0.06em; /* расстояние между буквами */
+}
+
+
+/* ADVANTAGES */
+
+.advantages {
+  background-color: var(--bg-white-color);
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+
+.list {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
+}
+
+
+/* SERVICES */
+
+.services {
+  background-color: var(--bg-white-color);;
+}
+
+.services-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+
+/* TEAM */
+
+.team {
+  background-color: var(--bg-light-gray-color);
+}
+
+.team-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+.master-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+.master-position {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
+}
+
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--bg-blue-color-hero);
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+}
+
+.footer-web {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--blue-text);
+}
+
+.footer-contacts a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--gray-text-op60);
+}
+
+.footer-contacts p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+}

@@ -1,0 +1,155 @@
+/* OСНОВНОЙ ШРИФТ ДЛЯ ВСЕГО ДОКУМЕНТА И ССІЛОК */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+
+.header {
+  background-color: var(--bg-white-color);
+}
+
+.logotype {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+.web {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--blue-text);
+}
+
+.menu a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--black-text);
+}
+
+.menu a.current {
+  color: var(--blue-text);
+}
+
+.menu a:hover {
+  color: var(--blue-text);
+}
+
+.contacts a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--gray-text);
+}
+
+.contacts a:hover {
+  color: var(--blue-text);
+}
+
+
+/* JOB button*/
+
+.job-btn {
+  border-radius: 4px;
+  background-color: var(--bg-light-gray-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-tex);
+}
+
+.job-btn:hover,
+.job-btn:focus,
+.job-btn:active {
+  border-radius: 4px;
+  background-color: var(--bg-blue-color);
+  color: var(--white-text);
+}
+
+
+/* JOB */
+
+.job {
+  background-color: var(--bg-white-color);
+}
+
+.job-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--black-text);
+}
+
+.job-type {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
+}
+
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--bg-blue-color-hero);
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+}
+
+.footer-web {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--blue-text);
+}
+
+.footer-contacts a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--gray-text-op60);
+}
+
+.footer-contacts p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+}
