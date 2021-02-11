@@ -11,6 +11,13 @@ body {
   background-color: var(--bg-white-color);
 }
 
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .logotype {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -31,13 +38,28 @@ body {
   color: var(--blue-text);
 }
 
+.menu {
+  display: flex; /* превращает меню навигации во flex-контейнер и выстраивает в одну строку */
+}
+
+.menu li {
+  margin-right: 50px; /* отступ справа между пунктами меню */
+}
+
+.menu li:last-child {
+  margin-right: 0px; /* снимает отступ справа у последнего пункта меню */
+}
+
 .menu a {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--black-text);
+  display: block; /* делает ссылку блочным боксом для того чтобы работали отступы от li */
+  padding-top: 32px; /* отступ ссылки от header для hover */
+  padding-bottom: 32px; /* отступ ссылки от header для hover */
+  color: var(--black-text); /* цвет шрифта */
+  font-style: normal; /* начертание шрифта */
+  font-weight: 500; /* насыщеность шрифта */
+  font-size: 14px; /* размер шрифта */
+  line-height: 16px; /* междустрочное расстояние */
+  letter-spacing: 0.02em; /* расстояние между буквами */
 }
 
 .menu a.current {
@@ -70,31 +92,30 @@ body {
 }
 
 .hero-title {
+  margin-top: 0; /* убирает отступы у hero-title что бы не пробивало и не отодвигало соседние блоки */
+  margin-bottom: 40px; /* отступ hero-title от button-primary */
+  color: var(--white-text);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-text);
-  margin-top: 0; /* убирает отступы у hero-title что бы не пробивало и не отодвигало соседние блоки */
-  margin-bottom: 40px; /* отступ hero-title от button-primary */
-
 }
 
 .button-primary {
-  display: inline-block; /* делает ссылку блочно-строчным боксом для того чтобы работали отступы от других блоков */
   background-color: var(--bg-blue-color); /* цвет фона кнопки */
+  display: inline-block; /* делает ссылку блочно-строчным боксом для того чтобы работали отступы от других блоков */
   border-radius: 4px; /* закругление границ кнопки */
   padding-left: 32px; /* отступ шрифта от границ кнопки */
   padding-top: 10px; /* отступ шрифта от границ кнопки */
   padding-right: 32px; /* отступ шрифта от границ кнопки */
   padding-bottom: 10px; /* отступ шрифта от границ кнопки */
   min-width: 200px; /* минимальная ширина кнопки */
+  color: var(--white-text); /* цвет шрифта */
   font-style: normal; /* начертание шрифта */
   font-weight: bold; /* насыщеность шрифта */
   font-size: 16px; /* размер шрифта */
-  color: var(--white-text); /* цвет шрифта */
   text-align: center; /* выравнивание текста по центру */
   line-height: 30px; /* междустрочное расстояние */
   letter-spacing: 0.06em; /* расстояние между буквами */
@@ -108,7 +129,7 @@ body {
   padding-top: 94px; /* внутренний отступ до края элемента */
   padding-bottom: 94px; /* внутренний отступ до края элемента */
 }
- /* контейнер для стилизации секции */
+
 .container {
   width: 1230px;
   padding-left: 15px;
