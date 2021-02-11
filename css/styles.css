@@ -12,13 +12,23 @@ body {
 }
 
 .container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  display: flex; /* выстраивает flex-контейнеры в одну строку родительского блок */
+  align-items: center; /* выравнивание flex-контейнеров по центру родительского блока */
+  width: 1230px; /* ширина контейнера */
+  padding-left: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
+  margin-left: auto; /* центрирование контейнера */
+  margin-right: auto; /* центрирование контейнера */
+  border: 1px solid black; /* временная рамка контейнера */
+}
+
+.main-nav {
+  display: flex; /* превращает main-nav во flex-контейнер */
+  align-items: center; /* выравнивание flex-элемента по центру родительского блока */
 }
 
 .logotype {
+  margin-right: 93px; /* отступ справа от main.nav */
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -68,6 +78,19 @@ body {
 
 .menu a:hover {
   color: var(--blue-text);
+}
+
+.contacts {
+  display: flex; /* превращает меню конактов во flex-контейнер и выстраивает в одну строку */
+  margin-left: auto; /* перемещает меню конактов в правый край */
+}
+
+.contacts li {
+  margin-left: 40px; /* отступ слева между пунктами контактов */
+}
+
+.contacts li:first-child {
+  margin-left: 0px; /* снимает отступ слева у последнего пункта контактов */
 }
 
 .contacts a {
@@ -130,11 +153,19 @@ body {
   padding-bottom: 94px; /* внутренний отступ до края элемента */
 }
 
-.container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+.advantages-container {
+  display: flex; /* превращает advantages-list во flex-контейнер и выстраивает в одну строку */
+  justify-content: space-between; /* равномерно распределяет все элементы по ширине flex-блока, первый элемент вначале, последний в конце */
+  width: 1230px; /* ширина контейнера */
+  padding-left: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
+  margin-left: auto; /* центрирование контейнера */
+  margin-right: auto; /* центрирование контейнера */
+  border: 1px solid black; /* временная рамка контейнера */
+}
+
+.advantages-item {
+  width: 270px; /* ширина контейнера */
 }
 
 .subtitle {
