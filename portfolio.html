@@ -21,26 +21,51 @@
     <!-- Шапка сайта -->
     <header class="header">
     
-        <!-- Навигация сайта -->
-        <nav>
-            <!-- Лого сайта -->
-            <a class="logotype"><span class="web">Web</span>Studio</a>
+        <!-- Контейнер для стилизации секции -->
+        <div class="header-container">
 
-            <!-- Ссылки на страницы сайта -->
-            <ul class="menu">
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="" class="current">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+            <!-- Навигация сайта -->
+            <nav class="main-navigation">
+                
+                <!-- Лого сайта -->
+                <a class="logotype">
+                    <span class="web">Web</span>Studio
+                </a>
+
+                <!-- Ссылки на страницы сайта -->
+                <ul class="menu-navigation">
+
+                    <li class="navigation-list">
+                        <a href="./index.html" class="navigation-link">Студия</a>
+                    </li>
+
+                    <li class="navigation-list">
+                        <a href="./portfolio.html" class="navigation-link current">Портфолио</a>
+                    </li>
+
+                    <li class="navigation-list">
+                        <a href="" class="navigation-link">Контакты</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Ссылки на mail и tel -->
+            <ul class="contacts">
+                
+                <li class="contacts-list">
+                    <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
+                </li>
+
+                <li class="contacts-list">
+                    <a href="tel:+38-096-111-11-11" class="contacts-link">+38 096 111 11 11</a>
+                </li>
+
             </ul>
-        </nav>
-
-
-
-        <!-- Ссылки на mail и tel -->
-        <ul class="contacts">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+38-096-111-11-11">+38 096 111 11 11</a></li>
-        </ul>
+        
+        </div>
 
     </header>
 
@@ -52,100 +77,121 @@
         <!-- Портфолио -->
         <section>
             
-            <!-- Кнопки перехода между разделами портфолио -->
-            <ul>
-                <li><button class="job-btn">Все</button></li>
-                <li><button class="job-btn">Веб-сайты</button></li>
-                <li><button class="job-btn">Приложения</button></li>
-                <li><button class="job-btn">Дизайн</button></li>
-                <li><button class="job-btn">Маркетинг</button></li>
-            </ul>
-            
+            <!-- Контейнер для стилизации секции -->
+            <div class="portfolio-container">    
 
+                <!-- Кнопки перехода между разделами портфолио -->
+                <ul class="buttons">
+                    
+                    <li class="buttons-list">
+                        <button class="job-btn">Все</button>
+                    </li>
 
-            <!-- Разделы портфолио -->
-            <ul class="job">
+                    <li class="buttons-list">
+                        <button class="job-btn">Веб-сайты</button>
+                    </li>
+
+                    <li class="buttons-list">
+                        <button class="job-btn">Приложения</button>
+                    </li>
+
+                    <li class="buttons-list">
+                        <button class="job-btn">Дизайн</button>
+                    </li>
+
+                    <li class="buttons-list">
+                        <button class="job-btn">Маркетинг</button>
+                    </li>
+
+                </ul>
                 
-                <!-- Карточка-1 -->
-                <li>
-                    <img src="./images/image-8.jpg" alt="Технокряк" width="370"/>
-                    <h2 class="job-name">Технокряк</h2>
-                    <p class="job-type">Веб-сайт</p>
-                </li>
+
+
+                <!-- Разделы портфолио -->
+                <ul class="job">
+                    
+                    <!-- Карточка-1 -->
+                    <li class="job-list">
+                        <img src="./images/image-8.jpg" alt="Технокряк" width="387"/>
+                        <h2 class="job-name">Технокряк</h2>
+                        <p class="job-type">Веб-сайт</p>
+                    </li>
 
 
 
-                <!-- Карточка-2 -->
-                <li>
-                    <img src="./images/image-9.jpg" alt="Постер New Orlean vs Golden Star" width="370"/>
-                    <h2 class="job-name">Постер New Orlean vs Golden Star</h2>
-                    <p class="job-type">Дизайн</p>
-                </li>
+                    <!-- Карточка-2 -->
+                    <li class="job-list">
+                        <img src="./images/image-9.jpg" alt="Постер New Orlean vs Golden Star" width="387"/>
+                        <h2 class="job-name">Постер New Orlean vs Golden Star</h2>
+                        <p class="job-type">Дизайн</p>
+                    </li>
 
 
 
-                <!-- Карточка-3 -->
-                <li>
-                    <img src="./images/image-10.jpg" alt="Ресторан Seafood" width="370"/>
-                    <h2 class="job-name">Ресторан Seafood</h2>
-                    <p class="job-type">Приложение</p>
-                </li>
+                    <!-- Карточка-3 -->
+                    <li class="job-list">
+                        <img src="./images/image-10.jpg" alt="Ресторан Seafood" width="387"/>
+                        <h2 class="job-name">Ресторан Seafood</h2>
+                        <p class="job-type">Приложение</p>
+                    </li>
 
 
 
-                <!-- Карточка-4 -->
-                <li>
-                    <img src="./images/image-11.jpg" alt="Проект Prime" width="370"/>
-                    <h2 class="job-name">Проект Prime</h2>
-                    <p class="job-type">Маркетинг</p>
-                </li>
+                    <!-- Карточка-4 -->
+                    <li class="job-list">
+                        <img src="./images/image-11.jpg" alt="Проект Prime" width="387"/>
+                        <h2 class="job-name">Проект Prime</h2>
+                        <p class="job-type">Маркетинг</p>
+                    </li>
 
 
 
-                <!-- Карточка-5 -->
-                <li>
-                    <img src="./images/image-12.jpg" alt="Проект Boxes" width="370"/>
-                    <h2 class="job-name">Проект Boxes</h2>
-                    <p class="job-type">Приложение</p>
-                </li>
+                    <!-- Карточка-5 -->
+                    <li class="job-list">
+                        <img src="./images/image-12.jpg" alt="Проект Boxes" width="387"/>
+                        <h2 class="job-name">Проект Boxes</h2>
+                        <p class="job-type">Приложение</p>
+                    </li>
 
 
 
-                <!-- Карточка-6 -->
-                <li>
-                    <img src="./images/image-13.jpg" alt="Inspiration has no Borders" width="370"/>
-                    <h2 class="job-name">Inspiration has no Borders</h2>
-                    <p class="job-type">Веб-сайт</p>
-                </li>
+                    <!-- Карточка-6 -->
+                    <li class="job-list">
+                        <img src="./images/image-13.jpg" alt="Inspiration has no Borders" width="387"/>
+                        <h2 class="job-name">Inspiration has no Borders</h2>
+                        <p class="job-type">Веб-сайт</p>
+                    </li>
 
 
 
-                <!-- Карточка-7 -->
-                <li>
-                    <img src="./images/image-14.jpg" alt="Издание Limited Edition" width="370"/>
-                    <h2 class="job-name">Издание Limited Edition</h2>
-                    <p class="job-type">Дизайн</p>
-                </li>
+                    <!-- Карточка-7 -->
+                    <li class="job-list">
+                        <img src="./images/image-14.jpg" alt="Издание Limited Edition" width="387"/>
+                        <h2 class="job-name">Издание Limited Edition</h2>
+                        <p class="job-type">Дизайн</p>
+                    </li>
 
 
 
-                <!-- Карточка-8 -->
-                <li>
-                    <img src="./images/image-15.jpg" alt="Проект LAB" width="370"/>
-                    <h2 class="job-name">Проект LAB</h2>
-                    <p class="job-type">Маркетинг</p>
-                </li>
+                    <!-- Карточка-8 -->
+                    <li class="job-list">
+                        <img src="./images/image-15.jpg" alt="Проект LAB" width="387"/>
+                        <h2 class="job-name">Проект LAB</h2>
+                        <p class="job-type">Маркетинг</p>
+                    </li>
 
 
 
-                <!-- Карточка-9 -->
-                <li>
-                    <img src="./images/image-16.jpg" alt="Growing Business" width="370"/>
-                    <h2 class="job-name">Growing Business</h2>
-                    <p class="job-type">Приложение</p>
-                </li>
+                    <!-- Карточка-9 -->
+                    <li class="job-list">
+                        <img src="./images/image-16.jpg" alt="Growing Business" width="387"/>
+                        <h2 class="job-name">Growing Business</h2>
+                        <p class="job-type">Приложение</p>
+                    </li>
 
-            </ul>
+                </ul>
+
+            </div>
 
         </section>
 
@@ -156,18 +202,23 @@
     <!-- Футер -->
     <footer class="footer">
         
-        <!-- Адрес и связь -->
-        <ul>
-            <li>
-                <a class="footer-logo"><span class="footer-web">Web</span>Studio</a>
+        <!-- Контейнер для стилизации секции -->
+        <div class="footer-container"> 
 
-                <address class="footer-contacts">    
-                    <p>г. Киев, пр-т Леси Украинки, 26</p>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
-                </address>
-            </li>
-        </ul>
+            <!-- Адрес и связь -->
+            <ul class="footer-list">
+                <li>
+                    <a class="footer-logo"><span class="footer-web">Web</span>Studio</a>
+
+                    <address class="footer-contacts">    
+                        <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+                        <a href="mailto:info@devstudio.com" class="mail-link">info@devstudio.com</a>
+                        <a href="tel:+38-096-111-11-11" class="tel-link">+38 096 111 11 11</a>
+                    </address>
+                </li>
+            </ul>
+
+        </div>
 
     </footer>
 

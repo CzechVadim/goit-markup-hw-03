@@ -9,9 +9,26 @@ body {
 
 .header {
   background-color: var(--bg-white-color);
+  border: 1px solid #ECECEC;
+}
+
+.header-container {
+  display: flex; /* выстраивает flex-контейнеры в одну строку родительского блок */
+  align-items: center; /* выравнивание flex-контейнеров по центру родительского блока */
+  width: 1230px; /* ширина контейнера */
+  padding-left: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
+  margin-left: auto; /* центрирование контейнера */
+  margin-right: auto; /* центрирование контейнера */
+}
+
+.main-navigation {
+  display: flex; /* превращает main-navigation во flex-контейнер */
+  align-items: center; /* выравнивание flex-контейнеров по центру родительского блока */
 }
 
 .logotype {
+  margin-right: 93px; /* отступ справа от logotype до menu-navigation */
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -31,7 +48,22 @@ body {
   color: var(--blue-text);
 }
 
-.menu a {
+.menu-navigation {
+  display: flex; /* превращает menu-navigation во flex-контейнер */
+}
+
+.navigation-list {
+  margin-right: 50px; /* отступ справа между пунктами меню */
+}
+
+.navigation-list:last-child {
+  margin-right: 0px; /* снимает отступ справа у последнего пункта меню */
+}
+
+.navigation-link {
+  display: block; /* делает ссылку блочным боксом для того чтобы работали отступы */
+  padding-top: 32px; /* увеличение области выделения ссылки */
+  padding-bottom: 32px; /* увеличение области выделения ссылки */
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -40,15 +72,31 @@ body {
   color: var(--black-text);
 }
 
-.menu a.current {
+.navigation-link.current {
   color: var(--blue-text);
 }
 
-.menu a:hover {
+.navigation-link:hover {
   color: var(--blue-text);
 }
 
-.contacts a {
+.contacts {
+  display: flex; /* превращает contacts во flex-контейнер */
+  margin-left: auto; /* перемещает меню конактов в правый край */
+}
+
+.contacts-list {
+  margin-left: 50px; /* отступ слева между пунктами контактов */
+}
+
+.contacts-list:first-child {
+  margin-left: 0px; /* снимает отступ слева у последнего пункта контактов */
+}
+
+.contacts-link {
+  display: block; /* делает ссылку блочным боксом для того чтобы работали отступы */
+  padding-top: 32px; /* увеличение области выделения ссылки */
+  padding-bottom: 32px; /* увеличение области выделения ссылки */
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -57,23 +105,54 @@ body {
   color: var(--gray-text);
 }
 
-.contacts a:hover {
+.contacts-link:hover {
   color: var(--blue-text);
 }
 
 
 /* JOB button*/
 
+.portfolio-container {
+  width: 1230px; /* ширина контейнера */
+  padding-left: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-top: 94px; /* внутренний верхний отступ от родительского блока до дочернего */
+  padding-bottom: 94px; /* внутренний нижний отступ от родительского блока до дочернего */
+  margin-left: auto; /* центрирование контейнера */
+  margin-right: auto; /* центрирование контейнера */
+}
+
+.buttons {
+  display: flex; /* превращает buttons-list во flex-контейнер */
+  justify-content: center; /* выравнивание flex-элементов по центру */
+}
+
+.buttons-list {
+  display: flex; /* превращает contacts во flex-контейнер */
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.buttons-list:last-child {
+  margin-right: 0px; /* снимает отступ справа у последнего пункта меню */
+}
+
 .job-btn {
-  border-radius: 4px;
-  background-color: var(--bg-light-gray-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--black-tex);
+  background-color: var(--bg-light-gray-color); /* цвет фона кнопки */
+  border-radius: 4px; /* закругление границ кнопки */
+  padding-left: 22px; /* отступ шрифта от границ кнопки */
+  padding-top: 6px; /* отступ шрифта от границ кнопки */
+  padding-right: 22px; /* отступ шрифта от границ кнопки */
+  padding-bottom: 6px; /* отступ шрифта от границ кнопки */
+  min-width: 73px; /* минимальная ширина кнопки */
+  color: var(--black-tex); /* цвет шрифта */
+  font-style: normal; /* начертание шрифта */
+  font-weight: 500; /* насыщеность шрифта */
+  font-size: 16px; /* размер шрифта */
+  line-height: 26px; /* выравнивание текста по центру */
+  text-align: center; /* междустрочное расстояние */
+  letter-spacing: 0.03em; /* расстояние между буквами */
+  margin-bottom: 50px;
 }
 
 .job-btn:hover,
@@ -89,9 +168,30 @@ body {
 
 .job {
   background-color: var(--bg-white-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job-list {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border: 1px solid #EEEEEE;
+}
+
+.job-list:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.job-list:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
 .job-name {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -101,6 +201,9 @@ body {
 }
 
 .job-type {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 24px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -116,7 +219,19 @@ body {
   background-color: var(--bg-blue-color-hero);
 }
 
+.footer-container {
+  width: 1230px; /* ширина контейнера */
+  padding-left: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto; /* центрирование контейнера */
+  margin-right: auto; /* центрирование контейнера */
+}
+
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -136,7 +251,21 @@ body {
   color: var(--blue-text);
 }
 
-.footer-contacts a {
+.location {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+}
+
+.mail-link {
+  display: block;
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -145,11 +274,12 @@ body {
   color: var(--gray-text-op60);
 }
 
-.footer-contacts p {
+.tel-link {
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--white-text);
+  color: var(--gray-text-op60);
 }

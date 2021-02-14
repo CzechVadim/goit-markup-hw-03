@@ -9,9 +9,10 @@ body {
 
 .header {
   background-color: var(--bg-white-color);
+  border: 1px solid #ECECEC;
 }
 
-.container {
+.header-container {
   display: flex; /* выстраивает flex-контейнеры в одну строку родительского блок */
   align-items: center; /* выравнивание flex-контейнеров по центру родительского блока */
   width: 1230px; /* ширина контейнера */
@@ -19,16 +20,15 @@ body {
   padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
   margin-left: auto; /* центрирование контейнера */
   margin-right: auto; /* центрирование контейнера */
-  border: 1px solid black; /* временная рамка контейнера */
 }
 
-.main-nav {
-  display: flex; /* превращает main-nav во flex-контейнер */
-  align-items: center; /* выравнивание flex-элемента по центру родительского блока */ 
+.main-navigation {
+  display: flex; /* превращает main-navigation во flex-контейнер */
+  align-items: center; /* выравнивание flex-контейнеров по центру родительского блока */
 }
 
 .logotype {
-  margin-right: 93px; /* отступ справа от main.nav */
+  margin-right: 93px; /* отступ справа от logotype до menu-navigation */
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -48,52 +48,55 @@ body {
   color: var(--blue-text);
 }
 
-.menu {
-  display: flex; /* превращает меню навигации во flex-контейнер и выстраивает в одну строку */
+.menu-navigation {
+  display: flex; /* превращает menu-navigation во flex-контейнер */
 }
 
-.menu li {
+.navigation-list {
   margin-right: 50px; /* отступ справа между пунктами меню */
 }
 
-.menu li:last-child {
+.navigation-list:last-child {
   margin-right: 0px; /* снимает отступ справа у последнего пункта меню */
 }
 
-.menu a {
-  display: block; /* делает ссылку блочным боксом для того чтобы работали отступы от li */
-  padding-top: 32px; /* отступ ссылки от header для hover */
-  padding-bottom: 32px; /* отступ ссылки от header для hover */
-  color: var(--black-text); /* цвет шрифта */
-  font-style: normal; /* начертание шрифта */
-  font-weight: 500; /* насыщеность шрифта */
-  font-size: 14px; /* размер шрифта */
-  line-height: 16px; /* междустрочное расстояние */
-  letter-spacing: 0.02em; /* расстояние между буквами */
+.navigation-link {
+  display: block; /* делает ссылку блочным боксом для того чтобы работали отступы */
+  padding-top: 32px; /* увеличение области выделения ссылки */
+  padding-bottom: 32px; /* увеличение области выделения ссылки */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--black-text);
 }
 
-.menu a.current {
+.navigation-link.current {
   color: var(--blue-text);
 }
 
-.menu a:hover {
+.navigation-link:hover {
   color: var(--blue-text);
 }
 
 .contacts {
-  display: flex; /* превращает меню конактов во flex-контейнер и выстраивает в одну строку */
+  display: flex; /* превращает contacts во flex-контейнер */
   margin-left: auto; /* перемещает меню конактов в правый край */
 }
 
-.contacts li {
-  margin-left: 40px; /* отступ слева между пунктами контактов */
+.contacts-list {
+  margin-left: 50px; /* отступ слева между пунктами контактов */
 }
 
-.contacts li:first-child {
+.contacts-list:first-child {
   margin-left: 0px; /* снимает отступ слева у последнего пункта контактов */
 }
 
-.contacts a {
+.contacts-link {
+  display: block; /* делает ссылку блочным боксом для того чтобы работали отступы */
+  padding-top: 32px; /* увеличение области выделения ссылки */
+  padding-bottom: 32px; /* увеличение области выделения ссылки */
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -102,7 +105,7 @@ body {
   color: var(--gray-text);
 }
 
-.contacts a:hover {
+.contacts-link:hover {
   color: var(--blue-text);
 }
 
@@ -161,7 +164,6 @@ body {
   margin-right: auto; /* центрирование контейнера */
   padding-top: 94px; /* внутренний отступ в advantages-container до края hero-container */
   padding-bottom: 94px; /* внутренний отступ в advantages-container до края services-container */
-  border: 1px solid black; /* временная рамка контейнера */
 }
 
 .advantages-item {
@@ -202,9 +204,9 @@ body {
   width: 1230px; /* ширина контейнера */
   padding-left: 15px; /* чтобы не сливался контент с вьюпортом */
   padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-bottom: 94px;
   margin-left: auto; /* центрирование контейнера */
   margin-right: auto; /* центрирование контейнера */
-  border: 1px solid black; /* временная рамка контейнера */
 }
 
 .services-title {
@@ -222,7 +224,6 @@ body {
 .services-list {
   display: flex; /* превращает services-list во flex-контейнер и выстраивает в одну строку */
   justify-content: space-between; /* равномерно распределяет флекс-элементы вдоль главной оси */
-  margin-bottom: 94px; /* внутренний отступ от services-title до края services-list */
 }
 
 
@@ -302,10 +303,6 @@ body {
   padding-bottom: 60px;
   margin-left: auto; /* центрирование контейнера */
   margin-right: auto; /* центрирование контейнера */
-}
-
-.footer-list {
-  padding-left: 215px;
 }
 
 .footer-logo {
