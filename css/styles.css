@@ -24,7 +24,7 @@ body {
 
 .main-nav {
   display: flex; /* превращает main-nav во flex-контейнер */
-  align-items: center; /* выравнивание flex-элемента по центру родительского блока */
+  align-items: center; /* выравнивание flex-элемента по центру родительского блока */ 
 }
 
 .logotype {
@@ -149,8 +149,6 @@ body {
 
 .advantages {
   background-color: var(--bg-white-color);
-  padding-top: 94px; /* внутренний отступ до края элемента */
-  padding-bottom: 94px; /* внутренний отступ до края элемента */
 }
 
 .advantages-container {
@@ -161,6 +159,8 @@ body {
   padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
   margin-left: auto; /* центрирование контейнера */
   margin-right: auto; /* центрирование контейнера */
+  padding-top: 94px; /* внутренний отступ в advantages-container до края hero-container */
+  padding-bottom: 94px; /* внутренний отступ в advantages-container до края services-container */
   border: 1px solid black; /* временная рамка контейнера */
 }
 
@@ -194,24 +194,35 @@ body {
 
 /* SERVICES */
 
-.container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+.services {
+  background-color: var(--bg-white-color);
 }
 
-.services {
-  background-color: var(--bg-white-color);;
+.services-container {
+  width: 1230px; /* ширина контейнера */
+  padding-left: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
+  margin-left: auto; /* центрирование контейнера */
+  margin-right: auto; /* центрирование контейнера */
+  border: 1px solid black; /* временная рамка контейнера */
 }
 
 .services-title {
+  margin-top: 0px; /* внутренний отступ от services-title до края services-container */
+  margin-bottom: 50px; /* внутренний отступ от services-title до края services-list */
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
+  text-align: center; /* выравнивание текста по центру */
   letter-spacing: 0.03em;
   color: var(--black-text);
+}
+
+.services-list {
+  display: flex; /* превращает services-list во flex-контейнер и выстраивает в одну строку */
+  justify-content: space-between; /* равномерно распределяет флекс-элементы вдоль главной оси */
+  margin-bottom: 94px; /* внутренний отступ от services-title до края services-list */
 }
 
 
@@ -221,7 +232,19 @@ body {
   background-color: var(--bg-light-gray-color);
 }
 
+.team-container {
+  width: 1230px; /* ширина контейнера */
+  padding-left: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto; /* центрирование контейнера */
+  margin-right: auto; /* центрирование контейнера */
+}
+
 .team-title {
+  margin-top: 0px;
+  margin-bottom: 50px; /* внутренний отступ от team-title до края team-list */
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -231,7 +254,20 @@ body {
   color: var(--black-text);
 }
 
+.team-list {
+  display: flex; /* превращает team-list во flex-контейнер и выстраивает в одну строку */
+  justify-content: space-between; /* равномерно распределяет флекс-элементы вдоль главной оси */
+}
+
+.team-item {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px
+}
+
 .master-name {
+  margin-top: 30px; /* внутренний отступ */
+  margin-bottom: 10px; /* внутренний отступ */
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -241,6 +277,8 @@ body {
 }
 
 .master-position {
+  margin-top: 0px; /* внутренний отступ */
+  margin-bottom: 30px; /* внутренний отступ */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -256,7 +294,23 @@ body {
   background-color: var(--bg-blue-color-hero);
 }
 
+.footer-container {
+  width: 1230px; /* ширина контейнера */
+  padding-left: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-right: 15px; /* чтобы не сливался контент с вьюпортом */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto; /* центрирование контейнера */
+  margin-right: auto; /* центрирование контейнера */
+}
+
+.footer-list {
+  padding-left: 215px;
+}
+
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -276,7 +330,21 @@ body {
   color: var(--blue-text);
 }
 
-.footer-contacts a {
+.location {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+}
+
+.mail-link {
+  display: block;
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -285,11 +353,12 @@ body {
   color: var(--gray-text-op60);
 }
 
-.footer-contacts p {
+.tel-link {
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--white-text);
+  color: var(--gray-text-op60);
 }
