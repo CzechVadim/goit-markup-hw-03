@@ -138,7 +138,8 @@ body {
 
 .job-btn {
   background-color: var(--bg-light-gray-color); /* цвет фона кнопки */
-  border-radius: 4px; /* закругление границ кнопки */
+  border: 0px;
+  border-radius: 4px;
   padding-left: 22px; /* отступ шрифта от границ кнопки */
   padding-top: 6px; /* отступ шрифта от границ кнопки */
   padding-right: 22px; /* отступ шрифта от границ кнопки */
@@ -157,7 +158,6 @@ body {
 .job-btn:hover,
 .job-btn:focus,
 .job-btn:active {
-  border-radius: 4px;
   background-color: var(--bg-blue-color);
   color: var(--white-text);
 }
