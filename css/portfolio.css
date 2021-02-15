@@ -128,7 +128,6 @@ body {
 }
 
 .buttons-list {
-  display: flex; /* превращает contacts во flex-контейнер */
   display: inline-block;
   margin-right: 8px;
 }
